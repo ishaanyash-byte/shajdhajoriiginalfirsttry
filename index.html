@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offer!</title>
+    <style>
+        /* This makes the page look clean and centers everything */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #141414; /* Netflix-style dark background */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            padding: 40px;
+            border-radius: 8px;
+            background-color: #181818;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Styling our prank button */
+        .promo-btn {
+            background-color: #E50914; /* Netflix Red */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .promo-btn:hover {
+            background-color: #b80710;
+        }
+
+        /* Secret message styling - hidden by default */
+        #secret-message {
+            display: none;
+            font-size: 1.5rem;
+            color: #ffcc00;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- This is what they see first -->
+        <div id="content-box">
+            <h1>Exclusive Limited Offer</h1>
+            <p>You have been selected for a special reward!</p>
+            <button class="promo-btn" onclick="revealPrank()">Click here to receive free 1 year of subscription of Netflix</button>
+        </div>
+
+        <!-- This is the hidden message that appears later -->
+        <p id="secret-message">Really, don't you know me? It's of course fake! 😂</p>
+    </div>
+
+    <script>
+        // This function handles the click event
+        function revealPrank() {
+            // Hide the original button and text
+            document.getElementById('content-box').style.display = 'none';
+            
+            // Show the joke message
+            document.getElementById('secret-message').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
