@@ -3,82 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Offer!</title>
+    <title>SAJ DHAJ | Bridal Makeup & Hair Services</title>
     <style>
-        /* This makes the page look clean and centers everything */
+        /* Premium, elegant styling */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #141414; /* Netflix-style dark background */
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Playfair Display', 'Georgia', serif;
+            background-color: #fdfbf7; /* Soft cream background */
+            color: #333;
             margin: 0;
+            padding: 0;
             text-align: center;
         }
 
-        .container {
-            padding: 40px;
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Branding Logo Image */
+        .logo-img {
+            max-width: 250px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            color: #6b1d1d; /* Elegant deep maroon from your logo */
+            text-transform: uppercase;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .hero-section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Reference Showcase Image Grid */
+        .gallery {
+            margin: 30px 0;
+        }
+
+        .showcase-img {
+            max-width: 100%;
+            width: 500px;
+            height: auto;
             border-radius: 8px;
-            background-color: #181818;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         }
 
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        /* Styling our prank button */
-        .promo-btn {
-            background-color: #E50914; /* Netflix Red */
-            color: white;
-            border: none;
-            padding: 15px 30px;
+        .services-desc {
             font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        /* Custom Booking Button */
+        .book-btn {
+            background-color: #6b1d1d; /* Maroon matching branding */
+            color: #ffffff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
             font-weight: bold;
             border-radius: 4px;
             cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        .promo-btn:hover {
-            background-color: #b80710;
-        }
-
-        /* Secret message styling - hidden by default */
-        #secret-message {
-            display: none;
-            font-size: 1.5rem;
-            color: #ffcc00;
+            box-shadow: 0 4px 15px rgba(107, 29, 29, 0.3);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
             margin-top: 20px;
-            font-style: italic;
+        }
+
+        .book-btn:hover {
+            background-color: #521414;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(107, 29, 29, 0.4);
+        }
+
+        /* Hidden Contact Page Section */
+        #contact-page {
+            display: none; /* Hidden by default */
+            padding: 60px 20px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .contact-box {
+            background-color: #ffffff;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-top: 4px solid #6b1d1d;
+        }
+
+        .contact-box h2 {
+            color: #6b1d1d;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .phone-link {
+            font-size: 1.8rem;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin: 20px 0;
+            transition: color 0.2s;
+        }
+
+        .phone-link:hover {
+            color: #6b1d1d;
+        }
+
+        /* Smooth fade-in transition when switching pages */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- This is what they see first -->
-        <div id="content-box">
-            <h1>Exclusive Limited Offer</h1>
-            <p>You have been selected for a special reward!</p>
-            <button class="promo-btn" onclick="revealPrank()">Click here to receive free 1 year of subscription of Netflix</button>
-        </div>
+    <!-- MAIN HOME PAGE LAYER -->
+    <div id="home-page">
+        <header>
+            <!-- Displays the logo layout image -->
+            <img src="WhatsApp Image 2026-07-02 at 22.26.00.jpeg" alt="SAJ DHAJ Logo" class="logo-img">
+            <div class="tagline">Bridal Makeup & Hair Services</div>
+        </header>
 
-        <!-- This is the hidden message that appears later -->
-        <p id="secret-message">Really, don't you know me? It's of course fake! 😂</p>
+        <main class="hero-section">
+            <p class="services-desc">
+                Crafting exquisite, timeless looks for your most special day. We specialize in luxury bridal makeovers, elegant hair styling, and personalized trousseau arrangements designed to make you shine.
+            </p>
+
+            <div class="gallery">
+                <!-- Displays the aesthetic product reference image -->
+                <img src="WhatsApp Image 2026-07-02 at 22.24.16.jpeg" alt="SAJ DHAJ Presentation" class="showcase-img">
+            </div>
+
+            <button class="book-btn" onclick="navigateToContact()">Book Now</button>
+        </main>
+    </div>
+
+    <!-- CONTACT PAGE LAYER (Revealed on click) -->
+    <div id="contact-page">
+        <div class="contact-box">
+            <h2>CONTACT US</h2>
+            <p>Get in touch with us to secure your date and discuss your dream bridal look.</p>
+            
+            <!-- Clicking this on a phone will automatically dial the number -->
+            <a href="tel:9821921198" class="phone-link">📞 +91 9821921198</a>
+            
+            <p style="color: #777; font-size: 0.9rem;">Call or WhatsApp us for inquiries</p>
+        </div>
     </div>
 
     <script>
-        // This function handles the click event
-        function revealPrank() {
-            // Hide the original button and text
-            document.getElementById('content-box').style.display = 'none';
+        // JavaScript logic to swap the main view to the contact details smoothly
+        function navigateToContact() {
+            // Hide home page content
+            document.getElementById('home-page').style.display = 'none';
             
-            // Show the joke message
-            document.getElementById('secret-message').style.display = 'block';
+            // Unhide contact page window
+            document.getElementById('contact-page').style.display = 'block';
+            
+            // Smoothly scroll to the top of the browser window
+            window.scrollTo({top: 0, behavior: 'smooth'});
         }
     </script>
 
